@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Pulse</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">
+        <span>🌤️</span>
+        <h1>Weather Pulse</h1>
+      </div>
+
+      <div class="nav-right">
+        <p>📍 New Delhi, IN</p>
+        <div class="line"></div>
+        <button class="theme-toggle">🌙 ☀️</button>
+      </div>
+    </nav>
+
+    <!-- Search -->
+    <div class="search-box">
+      <input id="cityInput" type="text" placeholder="Enter city name..." />
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <!-- Current Weather -->
+    <section class="weather">
+      <!-- Left side -->
+      <div class="current-weather">
+        <h2 id="city">New Delhi, IN</h2>
+
+        <p class="date" id="date">Loading...</p>
+
+        <div class="temperature">
+          <div class="weather-icon" id="weatherIcon">☀️</div>
+
+          <div>
+            <div class="temp"><span id="temperature">C</span></div>
+            <p id="description">Loading...</p>
+          </div>
+        </div>
+
+        <div class="min-max">
+          <p>Feels like 
+            <b><span id="feelsLike">--</span></b>
+          </p>
+
+          <p>
+            Min <span class="min" id="minTemp">--</span> &nbsp; | &nbsp;
+            Max <span class="max" id="maxTemp">--</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Right side -->
+      <div class="weather-details">
+        <div class="detail-card">
+          <span>💧</span>
+          <div>
+            <p>Humidity</p>
+            <h3 id="humidity">--</h3>
+          </div>
+        </div>
+
+        <div class="detail-card">
+          <span>💨</span>
+          <div>
+            <p>Wind Speed</p>
+            <h3 id="wind">--</h3>
+          </div>
+        </div>
+
+        <div class="detail-card">
+          <span>⏱️</span>
+          <div>
+            <p>Pressure</p>
+            <h3 id="pressure">--</h3>
+          </div>
+        </div>
+
+        <div class="detail-card">
+          <span>👁️</span>
+          <div>
+            <p>Visibility</p>
+            <h3 id="visibility">--</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Forecast -->
+    <section class="forecast">
+      <h2>5 Day Forecast</h2>
+
+      <div class="forecast-container">
+        <div class="forecast-card">
+          <h3>Fri, 2 May</h3>
+          <div class="forecast-icon">☀️</div>
+          <p>Clear Sky</p>
+          <div>
+            <span class="min">24°C</span>
+            /
+            <span class="max">35°C</span>
+          </div>
+        </div>
+
+        <div class="forecast-card">
+          <h3>Sat, 3 May</h3>
+          <div class="forecast-icon">🌤️</div>
+          <p>Partly Cloudy</p>
+          <div>
+            <span class="min">25°C</span>
+            /
+            <span class="max">36°C</span>
+          </div>
+        </div>
+
+        <div class="forecast-card">
+          <h3>Sun, 4 May</h3>
+          <div class="forecast-icon">☁️</div>
+          <p>Cloudy</p>
+          <div>
+            <span class="min">26°C</span>
+            /
+            <span class="max">34°C</span>
+          </div>
+        </div>
+
+        <div class="forecast-card">
+          <h3>Mon, 5 May</h3>
+          <div class="forecast-icon">🌧️</div>
+          <p>Light Rain</p>
+          <div>
+            <span class="min">24°C</span>
+            /
+            <span class="max">32°C</span>
+          </div>
+        </div>
+
+        <div class="forecast-card">
+          <h3>Tue, 6 May</h3>
+          <div class="forecast-icon">🌧️</div>
+          <p>Rain</p>
+          <div>
+            <span class="min">23°C</span>
+            /
+            <span class="max">31°C</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
